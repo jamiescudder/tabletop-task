@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<head>
+	<title>Reg Number Search</title>
+</head>
+
+
+<body>
+	<div class="main-block">
+		<h1>Vehicle Enquiry Service</h1>
+
+		<form action="/search-reg" method="POST">
+			<p class="small-txt">Enter a vehicle's reg plate get it's information.</p>
+			<div class="btn-block">
+				<input type="text" name="regplate" id="regplate" placeholder="GY13 79A..." required />
+			</div>
+			<div class="btn-block">
+				<button type="submit" id="submit_button" href="/">Submit</button>
+			</div>
+		</form>
+
+		<div class="return-block">
+			<label><%= vehicle_plate %></label>
+			<p class="return-data"><%= vehicle_make %></p>
+			<p class="return-data"><%= vehicle_model %></p>
+			<p class="return-data"><%= vehicle_picture %></p>
+			<p class="return-data"><%= vehicle_year %></p>
+		</div>
+	</div>
+</body>
+
+</html>

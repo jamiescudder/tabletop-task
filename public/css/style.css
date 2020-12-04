@@ -1,0 +1,94 @@
+html,
+body {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+body,
+div,
+h1,
+form,
+input,
+p {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 36px;
+	color: #666;
+}
+
+h1 {
+	padding: 10px 0;
+	font-size: 32px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.main-block {
+	max-width: 500px;
+	min-height: 800px;
+	padding: 10px 0;
+	margin: auto;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
+	background: #ebebeb;
+}
+
+form {
+	margin: 0 30px;
+}
+
+input[type="text"] {
+	width: 100%;
+	/* padding: 10px 0; */
+	margin: 10px auto;
+	border-radius: 5px;
+	border: solid 1px #cbc9c9;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+	background: #fff;
+	font-size: 28px;
+}
+
+.btn-block {
+	margin-top: 10px;
+	text-align: center;
+}
+
+button {
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px auto;
+	border-radius: 5px;
+	border: none;
+	background: #1c87c9;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+}
+
+button:hover {
+	background: #26a9e0;
+}
+
+.small-txt {
+	margin-top: 40px;
+	margin-left: 25px;
+	font-size: 12px;
+}
+
+.return-block {
+	padding: 10px 0;
+	margin-top: 10px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.return-data {
+	padding: 5px 0;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 16px;
+}

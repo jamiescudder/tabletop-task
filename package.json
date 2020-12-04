@@ -1,0 +1,19 @@
+{
+  "name": "dvla-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiescudder/tabletop-task.git"
+  },
+  "author": "Jamie Scudder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiescudder/tabletop-task/issues"
+  },
+  "homepage": "https://github.com/jamiescudder/tabletop-task#readme"
+}

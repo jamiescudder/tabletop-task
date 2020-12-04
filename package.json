@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jamiescudder/tabletop-task/issues"
   },
-  "homepage": "https://github.com/jamiescudder/tabletop-task#readme"
+  "homepage": "https://github.com/jamiescudder/tabletop-task#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

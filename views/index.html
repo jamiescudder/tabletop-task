@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/functions.js"></script>
 
 <head>
 	<title>Reg Number Search</title>
@@ -17,18 +18,39 @@
 				<input type="text" name="regplate" id="regplate" placeholder="GY13 79A..." required />
 			</div>
 			<div class="btn-block">
+				<!-- <button type="submit" id="submit_button" href="/" onclick=getVehicle()>Submit</button> -->
 				<button type="submit" id="submit_button" href="/">Submit</button>
 			</div>
 		</form>
 
-		<div class="return-block">
-			<label><%= vehicle_plate %></label>
-			<p class="return-data"><%= vehicle_make %></p>
-			<p class="return-data"><%= vehicle_model %></p>
-			<p class="return-data"><%= vehicle_picture %></p>
-			<p class="return-data"><%= vehicle_year %></p>
+		<div class="return-block" id="vehicle_info_table" style="display: <%= table_show %>">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2"><%= vehicle_plate %></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><%= vehicle_make %></th>
+					</tr>
+					<tr>
+						<td><%= vehicle_model %></th>
+					</tr>
+					<tr>
+						<td><%= vehicle_picture %></th>
+					</tr>
+					<tr>
+						<td><%= vehicle_year %></th>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </body>
 
 </html>
+
+<script>
+
+</script>

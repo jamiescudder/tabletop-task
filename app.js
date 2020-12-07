@@ -37,10 +37,10 @@ app.set('views', './views')
 app.get('/', (req, res) => {
     if (vehicle_data) {
         res.render('index.html', {
-            vehicle_plate: vehicle_data.registrationNumber + " Information",
+            vehicle_plate: "Reg Plate: " + vehicle_data.registrationNumber,
             vehicle_make: "Make: " + vehicle_data.make,
-            vehicle_model: "Model: " + vehicle_data.typeApproval,
-            vehicle_picture: "Picture: " + "N/A",
+            vehicle_color: "Color: " + vehicle_data.colour,
+            vehicle_fuel_type: "Fuel Type: " + vehicle_data.fuelType,
             vehicle_year: "Year: " + vehicle_data.yearOfManufacture,
             table_show: 'table'
         })
@@ -48,8 +48,8 @@ app.get('/', (req, res) => {
         res.render('index.html', {
             vehicle_plate: "",
             vehicle_make: "",
-            vehicle_model: "",
-            vehicle_picture: "",
+            vehicle_color: "",
+            vehicle_fuel_type: "",
             vehicle_year: "",
             table_show: 'none'
         })
@@ -76,6 +76,7 @@ app.post('/search-reg', (req, res) => {
 
     Axios(config).then(function (response) {
         vehicle_data = response.data
+        console.log(vehicle_data)
         return res.redirect('/')
     }).catch(function (error) {
         return res.redirect('/')

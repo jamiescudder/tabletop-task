@@ -12,10 +12,12 @@ document.onreadystatechange = () => {
                 alert("Please enter your vehicle reg.")
                 e.preventDefault();
                 document.getElementById('regplate').value = "";
+                document.getElementById("vehicle_info_table").style.display = "none";
             } else {
-                alert("Searching for your vehicle information.")
-                document.getElementById("vehicle_info_table").style.display = "table";
-            }
+                if (document.getElementById('regplate').value.length > 0) {
+                    alert("Searching for your vehicle information.")
+                };
+            };
         };
     };
 };
